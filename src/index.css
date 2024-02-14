@@ -1,0 +1,193 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 350px;
+  flex-grow: 1;
+}
+.expense-item.positive{
+  border-right: 4px solid green;
+}
+.expense-item.negative{
+  border-right: 4px solid red;
+}
+.income-expense-container{
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 350px;
+}
+.income,
+.expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.income .title,
+.expense .title{
+  font-size: 20px;
+  color: black;
+}
+.income{
+  color: green;
+  font-weight: bolder;
+
+}
+.expense{
+  color: red;
+  font-weight: bolder;
+
+}
+.block{
+  width: 2px;
+  border-radius: 20px;
+  background-color: grey;
+}
+.balance{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(28, 123, 219);
+  font-weight: 900;  
+}
+/* .input-container{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+} */
+form input{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+form button{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #ddd;
+}
+form .error{
+  color: red;
+  font-size: 12px;
+  margin: 0 0 0.75rem 0;
+}
+
+
+.outbox{
+ 
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 350px;
+
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #ffffff;
+  max-width: 350px;
+
+}
+.up{
+  font-weight: bolder;
+  font-size: 70%;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #153957 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  
+      font-size: 40px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+  
+}
+.btn2{
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(101, 101, 101, 0.5);
+  border-color: white;
+  background-color: rgb(213, 213, 213);
+  font-weight: bold;
+ 
+
+}
+.delete-btn:active{
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.5);
+  
+}
+.delete-btn:hover{
+  transform: scale(1.1);
+}
+
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 400px;
+  gap: 10px;
+}
+.delete-btn{
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgb(196, 193, 193);
+  border-color: white;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+
+.btn:hover{
+  transform: scale(1.1);
+}
