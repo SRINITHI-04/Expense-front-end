@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
-import ExpenseItem from "./components/ExpenseItem"
-import ExpenseForm from "./components/ExpenseForm"
+import ExpenseItem from "./Components/ExpenseItem"
+import ExpenseForm from "./Components/ExpenseForm"
 import axios from "axios"
 
 const App = ()=> {
   const [expenses,setExpenses] = useState ([])
     useEffect(() => {
-      axios.get('https://expense-front-end.onrender.com/get-entries')
+      axios.get('https://expense-front-end.onrender.com/get-entry ')
       .then(res => {
         console.log(res.data)
         setExpenses(res.data)
